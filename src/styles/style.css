@@ -1,3 +1,25 @@
-/*font-family: "Poppins", sans-serif;
-font-family: "Roboto", sans-serif;
-font-family: "Lora", serif;*/
+:root {
+  /*Кольори*/
+  --color-bg-primary: #1e252b;
+  --color-font-90: #ffffffe6;
+  --color-font-primary-78: #ffffffc7;
+  --color-font-primary-55: #ffffff8c;
+  --color-font-search: #ffffff61;
+  --color-border-button: #ffffff1a;
+  --color-border: #ffffff26;
+  --color-orange: #ff6e30;
+  --color-signup: #fdf5ff;
+  --color-like: #fd3b41;
+  --color-input-bg: #283036;
+  --color-gradient-cards: #ff6e3099;
+  --color-gradient-brands: #ff484266;
+  --color-tools-category-hover: #ffa537;
+  --color-tools-category: #ffa5378c;
+  --color-bg-brands: #2c353d33;
+  --color-bg-cards: #28303699;
+
+  /*Шрифти*/
+  --font-primary: "Poppins", sans-serif;
+  --font-reviews: "Roboto", sans-serif;
+  --font-reviews-decor: "Lora", serif;
+}
