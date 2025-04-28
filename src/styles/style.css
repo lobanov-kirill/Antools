@@ -1,5 +1,62 @@
+/*=======================Лайк=============================
+
+.checkbox-like {
+  appearance: none;
+  width: 25px;
+  height: 21px;
+  background-image: url(../img/figma.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.checkbox-like:checked {
+  background-image: url(../img/like-red.svg);
+}
+*/
+
+/*==============================Випадаючий список====================
+.list {
+  border: 1px solid black;
+  padding-left: 50px;
+  position: relative;
+}
+
+.nav-menu {
+  position: absolute;
+  width: 100%;
+  border: 1px solid black;
+  left: 200px;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+.list:hover .nav-menu {
+  pointer-events: all;
+  opacity: 1;
+}
+.menu-item:hover {
+  background-color: grey;
+}
+*/
+
+/*============================Рух в гору========================
+
+.tools-button {
+  padding-inline: 20px;
+  transition: transform 0.2s ease-in;
+}
+
+.tools-button:hover {
+  transform: translateY(-10px);
+}
+*/
+html {
+  scroll-behavior: smooth;
+}
 :root {
-  /*Кольори*/
+  /*Colors*/
   --color-bg-primary: #1e252b;
   --color-font-90: #ffffffe6;
   --color-font-primary-78: #ffffffc7;
@@ -18,8 +75,91 @@
   --color-bg-brands: #2c353d33;
   --color-bg-cards: #28303699;
 
-  /*Шрифти*/
+  /*Fonts*/
   --font-primary: "Poppins", sans-serif;
   --font-reviews: "Roboto", sans-serif;
   --font-reviews-decor: "Lora", serif;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  font-family: var(--font-primary);
+  color: var(--color-font-90);
+  background-color: var(--color-bg-primary);
+}
+
+.container {
+  max-width: 1255px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*HEADER*/
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--color-font-primary-55);
+}
+.action-link-reg {
+  color: var(--color-font-primary-78);
+  font-weight: 600;
+}
+.action-link-log {
+  color: var(--color-signup);
+  line-height: 1.5;
+  font-weight: 600;
+  background-color: var(--color-orange);
+  padding: 12px 28px;
+  border-radius: 8px;
+}
+
+/*TOOLS*/
+.tools-title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 140%;
+}
+.tools-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--color-font-primary-55);
+}
+.tools-input {
+  color: var(--color-font-search);
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 21px;
+  padding-left: 55px;
+  padding-right: 252px;
+  padding-bottom: 22px;
+  background-color: var(--color-input-bg);
+  border-radius: 15px;
+  border: none;
+}
+.tools-button {
+  color: var(--color-signup);
+  line-height: 1.5;
+  font-weight: 600;
+  background-color: var(--color-orange);
+  padding: 12px 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  position: absolute;
+  transform: translateY(+15%);
+  margin-left: -140px;
+}
+
+.tools-form {
+  position: relative;
+  width: 497px;
 }
