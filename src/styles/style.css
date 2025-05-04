@@ -102,10 +102,37 @@ body {
 }
 
 /*HEADER*/
+
+.header {
+  padding-top: 26px;
+  padding-bottom: 111px;
+  padding-left: 161px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 257px;
+}
 .logo {
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5;
+}
+
+.nav {
+  flex-grow: 1;
+}
+
+.nav-list {
+  display: flex;
+  gap: 41px;
+}
+
+.header-action {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .nav-link {
@@ -131,11 +158,19 @@ body {
   font-size: 50px;
   font-weight: 500;
   line-height: 140%;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+.tools-title-span {
+  color: var(--color-orange);
 }
 .tools-text {
   font-size: 18px;
   line-height: 1.6;
   color: var(--color-font-primary-55);
+  max-width: 487px;
+  padding-bottom: 60px;
 }
 .tools-input {
   color: var(--color-font-search);
@@ -148,6 +183,7 @@ body {
   background-color: var(--color-input-bg);
   border-radius: 15px;
   border: none;
+  margin-bottom: 110px;
 }
 .tools-button {
   color: var(--color-signup);
@@ -160,26 +196,48 @@ body {
   position: absolute;
   transform: translateY(+15%);
   margin-left: -140px;
-  cursor: pointer;
 }
-
-.tools-form {
-  position: relative;
-  width: 497px;
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 }
 
 /*POPTULS*/
 
+.poptuls-gallery {
+  display: flex;
+  flex-direction: column;
+  max-width: 392px;
+  align-items: flex-start;
+}
+.poptuls-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.poptuls-item {
+  flex-basis: calc((100% - 50px) / 3);
+}
 .poptuls-title {
   font-size: 48px;
   line-height: 130%;
   font-weight: 500;
+  display: flex;
+  padding-top: 175px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
 }
 .poptuls-text {
   font-size: 18px;
   color: var(--color-font-primary-55);
   line-height: 1.6;
   font-weight: 500;
+  display: flex;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
 }
 
 .poptuls-name {
@@ -187,12 +245,22 @@ body {
   color: var(--color-font-primary-78);
   font-weight: 500;
   line-height: 1.5;
+  display: flex;
+  gap: 30px;
+}
+
+.poptuls-name::before {
+  content: "";
+  background-image: url(../img/figma.svg);
+  width: 64px;
+  height: 64px;
 }
 
 .poptuls-category {
   font-size: 18px;
   color: var(--color-tools-category);
   line-height: 1.5;
+  display: flex;
 }
 
 .poptuls-description {
@@ -247,6 +315,10 @@ body {
   padding-top: 17px;
   padding-bottom: 17px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 /*BRANDS*/
 
@@ -255,6 +327,15 @@ body {
   font-weight: 500;
   line-height: 1.5;
   font-size: 24px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 55px;
+}
+.brands-list {
+  display: flex;
+  flex-direction: row;
+  gap: 107px;
+  justify-content: center;
 }
 
 /*NEWCOMER-TOOLS*/
