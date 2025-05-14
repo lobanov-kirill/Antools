@@ -114,6 +114,42 @@ body {
   align-items: center;
   gap: 257px;
 }
+.list {
+  padding-left: 50px;
+  position: relative;
+}
+
+.nav-menu {
+  position: absolute;
+  width: 100%;
+  border: 1px solid var(--color-font-primary-10);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  left: 25px;
+  top: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+.list:hover .nav-menu {
+  pointer-events: all;
+  opacity: 1;
+}
+.menu-item {
+  padding-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.menu-item:hover {
+  background-color: var(--color-font-primary-10);
+  border-radius: 5px;
+  cursor: pointer;
+}
 .logo {
   font-size: 22px;
   font-weight: 600;
@@ -154,6 +190,13 @@ body {
 }
 
 /*TOOLS*/
+
+.tools {
+  background-image: url(../img/hero.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
 .tools-title {
   font-size: 50px;
   font-weight: 500;
@@ -172,17 +215,24 @@ body {
   max-width: 487px;
   padding-bottom: 60px;
 }
+
+.tools-form {
+  max-width: 497px;
+  margin-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 18px;
+  padding-right: 11px;
+  border-radius: 15px;
+  border: none;
+  background-color: var(--color-input-bg);
+  display: flex;
+  align-items: center;
+}
+
 .tools-input {
   color: var(--color-font-search);
   font-size: 14px;
   line-height: 1.5;
-  padding-top: 21px;
-  padding-left: 55px;
-  padding-right: 252px;
-  padding-bottom: 22px;
-  background-color: var(--color-input-bg);
-  border-radius: 15px;
-  border: none;
   margin-bottom: 110px;
 }
 .tools-button {
@@ -193,9 +243,6 @@ body {
   padding: 12px 36px;
   border-radius: 8px;
   cursor: pointer;
-  position: absolute;
-  transform: translateY(+15%);
-  margin-left: -140px;
 }
 .social-list {
   display: flex;
@@ -205,19 +252,34 @@ body {
 
 /*POPTULS*/
 
-.poptuls-gallery {
+.poptuls-tool {
   display: flex;
   max-width: 392px;
   flex-direction: column;
 }
-.poptuls-div {
-  display: flex;
-  flex-direction: column;
+
+.poptuls-tool:hover {
+  background: linear-gradient(to top right, #28303699, #ff6e3099);
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05),
+    /* внутренний свет */ 0 4px 8px rgba(0, 0, 0, 0.3);
 }
-.divis {
-  display: flex;
-  flex-direction: row;
+
+.poptuls-tool:hover .poptuls-name {
+  color: var(--color-font-90);
 }
+
+.poptuls-tool:hover .poptuls-category {
+  color: var(--color-tools-category-hover);
+}
+
+.poptuls-tool:hover .poptuls-description {
+  color: var(--color-font-primary-78);
+}
+.poptuls-top {
+  display: flex;
+}
+
 .poptuls-list {
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +321,6 @@ body {
   gap: 30px;
   display: flex;
 }
-
 .poptuls-name::before {
   content: "";
   background-image: url(../img/figma.svg);
@@ -305,19 +366,6 @@ body {
   margin-left: 124px;
 }
 
-.poptuls-name:hover {
-  color: var(--color-font-90);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.5;
-}
-
-.poptuls-category:hover {
-  line-height: 1.5;
-  color: var(--color-tools-category-hover);
-  cursor: pointer;
-}
-
 .checkbox-like {
   appearance: none;
   width: 25px;
@@ -325,19 +373,19 @@ body {
   background-image: url(../img/like.svg);
   background-position: center;
   align-items: center;
-  background-size: cover;
 }
 
 .checkbox-like:checked {
   background-image: url(../img/like-red.svg);
   width: 42px;
   height: 42px;
+  background-size: cover;
 }
 
 .checkbox-saved {
   margin-left: 30px;
-  width: 42px;
-  height: 42px;
+  width: 30px;
+  height: 30px;
   background-position: center;
   background-size: cover;
   appearance: none;
@@ -366,6 +414,10 @@ body {
   cursor: pointer;
 }
 
+.poptuls-button-div {
+  display: flex;
+  justify-content: center;
+}
 .poptuls-button {
   background-color: inherit;
   color: var(--color-orange);
@@ -404,7 +456,10 @@ body {
 }
 
 /*NEWCOMER-TOOLS*/
-
+.newcomer-container {
+  display: flex;
+  justify-content: space-between;
+}
 .newcomer-item {
   flex-basis: calc((100% - 25px) / 2);
 }
@@ -420,6 +475,7 @@ body {
   flex-wrap: wrap;
   row-gap: 50px;
   column-gap: 25px;
+  max-width: 600px;
 }
 
 .newcomer-title {
@@ -508,25 +564,52 @@ body {
 }
 /*REVIEWS*/
 
+.reviews {
+  padding-top: 200px;
+  padding-bottom: 358px;
+}
+
+.reviews-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .reviews-text {
   font-family: var(--font-reviews);
   font-size: 14px;
   line-height: 2.14;
   color: var(--color-font-primary-78);
   letter-spacing: 1.5%;
+  max-width: 393px;
+  padding-left: 57px;
 }
+
 /*CONTRIBUTOR*/
+.contributor {
+  padding-bottom: 240px;
+}
 
 .contributor-title {
   font-size: 48px;
   line-height: 130%;
   font-weight: 500;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 25px;
 }
 .contributor-text {
   font-size: 18px;
   color: var(--color-font-primary-55);
   font-weight: 500;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  max-width: 427px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 100px;
 }
 
 .contributor-input {
@@ -541,6 +624,15 @@ body {
   border-radius: 15px;
   border: none;
 }
+
+.contributor-input:hover {
+  border: 1px solid #ffffff2c;
+}
+
+.contributor-input:focus {
+  outline: none;
+}
+
 .contributor-button {
   color: var(--color-signup);
   line-height: 1.5;
@@ -560,22 +652,50 @@ body {
   width: 549px;
 }
 
-/*FOOTER*/
+.form {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
 
+/*FOOTER*/
+.footer {
+  border-top: 0.5px solid #ffffff26;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 115px;
+  padding-top: 70px;
+  padding-bottom: 98px;
+}
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+}
 .policy {
   font-weight: 500;
   line-height: 1.5;
+  padding-top: 27px;
 }
 .footer-text {
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-font-primary-55);
+  padding-top: 21px;
 }
 
 .footer-title {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.footer-contacts-adress {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .footer-contacts-adress {
@@ -591,7 +711,9 @@ body {
   font-weight: 500;
   font-style: normal;
 }
-
+.footer-bottom-10px {
+  padding-bottom: 10px;
+}
 .footer-categories-item {
   color: var(--color-font-primary-55);
   line-height: 1.5;

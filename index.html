@@ -7,6 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="icon"
+      type="image/png"
+      href="./src/img/antools-logo-website.png"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
       rel="stylesheet"
     />
@@ -31,11 +36,11 @@
             <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item list">
               <a class="nav-link" href="#">Categories</a>
-              <!--<ul class="nav-menu">
-                <li class="menu-item">subitem</li>
-                <li class="menu-item">subitem</li>
-                <li class="menu-item">subitem</li>
-              </ul>-->
+              <ul class="nav-menu">
+                <a class="menu-item" href="#poptuls">Tools</a>
+                <a class="menu-item" href="#reviews">Reviews</a>
+                <a class="menu-item" href="#footer">Contacts</a>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">My Collections</a>
@@ -54,11 +59,11 @@
       <!--TOOLS-->
       <section class="tools">
         <div class="container tools-container">
-          <h1 class="tools-title">
+          <h2 class="tools-title">
             Awesome tools for Designer & Developer<span class="tools-title-span"
               >.</span
             >
-          </h1>
+          </h2>
           <p class="tools-text">
             Antool is a web collection of information on paid or free Design and
             Development tools
@@ -105,16 +110,16 @@
         </div>
       </section>
       <!--POPULAR TOOLS-->
-      <section class="poptuls">
+      <section class="poptuls" id="poptuls">
         <div class="container poptuls-container">
-          <h1 class="poptuls-title">Most Popular Tools</h1>
+          <h2 class="poptuls-title">Most Popular Tools</h2>
           <p class="poptuls-text">
             Tools for the best Designers and Developers most popularly used in
             the world
           </p>
           <ul class="poptuls-list">
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <h3 class="poptuls-name">FIGMA</h3>
                 <h4 class="poptuls-category">Free</h4>
                 <p class="poptuls-description">
@@ -123,14 +128,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <div class="poptuls-div">
                   <h3 class="poptuls-name">Sketch</h3>
                   <h4 class="poptuls-category">Trial & Paid</h4>
@@ -141,14 +144,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <h3 class="poptuls-name">Visual Studio Code</h3>
                 <h4 class="poptuls-category">Free</h4>
                 <p class="poptuls-description">
@@ -157,14 +158,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <h3 class="poptuls-name">Notion</h3>
                 <h4 class="poptuls-category">Free & Paid</h4>
                 <p class="poptuls-description">
@@ -173,14 +172,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <h3 class="poptuls-name">Slack</h3>
                 <h4 class="poptuls-category">Free & Paid</h4>
                 <p class="poptuls-description">
@@ -189,14 +186,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
-              <article class="poptuls-gallery">
+              <article class="poptuls-tool">
                 <h3 class="poptuls-name">Invision</h3>
                 <h4 class="poptuls-category">Free & Paid</h4>
                 <p class="poptuls-description">
@@ -205,14 +200,12 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="poptuls-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="poptuls-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
           </ul>
-          <div>
+          <div class="poptuls-button-div">
             <button type="button" class="poptuls-button">Load more</button>
           </div>
         </div>
@@ -220,7 +213,7 @@
       <!--BRANDS-->
       <section class="brands">
         <div class="container brands-container">
-          <h1 class="brands-title">Trusted more than 150+ brand</h1>
+          <h2 class="brands-title">Trusted more than 150+ brand</h2>
           <ul class="brands-list">
             <li class="brands-item">
               <a href="#" class="brands-link">
@@ -264,12 +257,14 @@
       <!--NEWCOMER TOOLS-->
       <section class="newcomer">
         <div class="container newcomer-container">
-          <h1 class="newcomer-title">Newcomer Tools</h1>
-          <p class="newcomer-text">
-            Wow! see the latest update of the most recommended tools from
-            reliable designers and developers
-          </p>
-          <button class="newcomer-button">Explore more</button>
+          <div class="newcomer-content">
+            <h2 class="newcomer-title">Newcomer Tools</h2>
+            <p class="newcomer-text">
+              Wow! see the latest update of the most recommended tools from
+              reliable designers and developers
+            </p>
+            <button class="newcomer-button">Explore more</button>
+          </div>
           <ul class="newcomer-list">
             <li class="newcomer-item">
               <article class="newcomer-gallery">
@@ -281,10 +276,7 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-
-                  <button class="newcomer-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="newcomer-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
@@ -298,9 +290,7 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="newcomer-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="newcomer-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
@@ -314,9 +304,7 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="newcomer-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="newcomer-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
@@ -330,9 +318,7 @@
                 <div>
                   <input type="checkbox" class="checkbox-like" />
                   <input type="checkbox" class="checkbox-saved" />
-                  <button class="newcomer-gallery-button" type="button">
-                    Visit
-                  </button>
+                  <a href="#" class="newcomer-gallery-button">Visit</a>
                 </div>
               </article>
             </li>
@@ -340,7 +326,7 @@
         </div>
       </section>
       <!--REVIEWS-->
-      <section class="reviews">
+      <section class="reviews" id="reviews">
         <div class="container reviews-container">
           <article class="reviews-first">
             <img
@@ -362,62 +348,78 @@
       <!--Contributor-->
       <section id="contributor" class="contributor">
         <div class="container contributor-container">
-          <h1 class="contributor-title">Become a contributor?</h1>
+          <h2 class="contributor-title">Become a contributor?</h2>
           <p class="contributor-text">
             Join us and get tips & tricks to become a great Designer and
             Developer
           </p>
-          <form class="contributor-form">
-            <input
-              class="contributor-input"
-              placeholder="Enter your email..."
-              type="email"
-            />
-            <button class="contributor-button" type="submit">Join Us</button>
-          </form>
+          <div class="form">
+            <form class="contributor-form">
+              <input
+                class="contributor-input"
+                placeholder="Enter your email..."
+                type="email"
+              />
+              <button class="contributor-button" type="submit">Join Us</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>
     <!--FOOTER-->
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container footer-container">
         <div class="footer-info">
-          <a class="logo" href="./index.html">antools.</a>
+          <a class="logo footer-logo" href="./index.html">antools.</a>
           <p class="policy">Copyright 2021. Antools</p>
           <p class="footer-text">
             Antool is a web collection of information on paid or free Design and
             Development tools
           </p>
         </div>
-        <h3 class="footer-title">Contact Us</h3>
-        <address class="footer-adress">
-          <ul class="footer-contacts-list">
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="tel:+621987463"
-                >+621987463</a
-              >
-            </li>
-            <li class="footer-contacts-item">
-              <p class="footer-contacts-adress">M Building, No.10 A</p>
-            </li>
-            <li class="footer-contacts-item">
-              <a class="footer-contacts-link" href="mailto:antools@awesome.com"
-                >antools@awesome.com</a
-              >
-            </li>
+        <div class="footer-contact">
+          <h3 class="footer-title">Contact Us</h3>
+          <address class="footer-adress">
+            <ul class="footer-contacts-list">
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link footer-contacts-tel"
+                  href="tel:+621987463"
+                  >+621987463</a
+                >
+              </li>
+              <li class="footer-contacts-item">
+                <p class="footer-contacts-adress">M Building, No.10 A</p>
+              </li>
+              <li class="footer-contacts-item">
+                <a
+                  class="footer-contacts-link footer-contacts-mailto"
+                  href="mailto:antools@awesome.com"
+                  >antools@awesome.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-categories">
+          <h3 class="footer-title">Categories</h3>
+          <ul class="footer-categories-list">
+            <li class="footer-categories-item footer-bottom-10px">Design</li>
+            <li class="footer-categories-item">Development</li>
           </ul>
-        </address>
-        <h3 class="footer-title">Categories</h3>
-        <ul class="footer-categories-list">
-          <li class="footer-categories-item">Design</li>
-          <li class="footer-categories-item">Development</li>
-        </ul>
-        <h3 class="footer-title">Company Info</h3>
-        <ul class="footer-company-info-list">
-          <li class="footer-company-info-item">About Us</li>
-          <li class="footer-company-info-item">Our Partners</li>
-          <li class="footer-company-info-item">Blog</li>
-        </ul>
+        </div>
+        <div class="footer-company">
+          <h3 class="footer-title">Company Info</h3>
+          <ul class="footer-company-info-list">
+            <li class="footer-company-info-item footer-bottom-10px">
+              About Us
+            </li>
+            <li class="footer-company-info-item footer-bottom-10px">
+              Our Partners
+            </li>
+            <li class="footer-company-info-item">Blog</li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
