@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./src/img/antools-logo-website.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+  </head>
+  <body>
+    <section>
+      <a class="logo" href="../../index.html">antools.</a>
+      <h1>Sign Up</h1>
+      <div>
+        <ul>
+          <li>
+            <input
+              type="email"
+              id="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </li>
+          <li>
+            <input type="tel" id="tel" placeholder="+380500000000" required />
+          </li>
+          <li><input type="text" id="name" placeholder="Kirill" /></li>
+          <li>
+            <input
+              type="password"
+              id="password"
+              placeholder="*password*"
+              required
+            />
+          </li>
+          <li>
+            <input
+              type="number"
+              id="age"
+              placeholder="18"
+              min="18"
+              max="120"
+              value="21"
+            />
+            <label for="age">Введіть свій вік</label>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <ul>
+              <h3>Визначте свій класс в програмуванні</h3>
+              <li>
+                <input
+                  name="level"
+                  type="radio"
+                  value="junior"
+                  id="junior-level"
+                />
+                <label for="junior-level">Development</label>
+              </li>
+              <li>
+                <input
+                  name="level"
+                  type="radio"
+                  value="middle"
+                  id="middle-level"
+                />
+                <label for="middle-level">Design</label>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button type="submit">Зареєструватися</button>
+        <button type="reset">Скинути</button>
+      </div>
+    </section>
+  </body>
+</html>

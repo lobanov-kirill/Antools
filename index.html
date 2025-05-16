@@ -30,12 +30,14 @@
     <!--HEADER-->
     <header class="header">
       <div class="container header-container">
-        <a class="logo" href="#contributor">antools.</a>
+        <a class="logo header-logo" href="#contributor">antools.</a>
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
             <li class="nav-item list">
-              <a class="nav-link" href="#">Categories</a>
+              <a class="nav-link categories" href="#">Categories</a>
               <ul class="nav-menu">
                 <a class="menu-item" href="#poptuls">Tools</a>
                 <a class="menu-item" href="#reviews">Reviews</a>
@@ -50,7 +52,9 @@
         </nav>
         <div class="header-action">
           <a class="action-link-reg" href="#">Login</a>
-          <a class="action-link-log" href="#">Sign Up</a>
+          <a class="action-link-log" href="./src/pages/antools-log-in.html"
+            >Sign Up</a
+          >
         </div>
       </div>
     </header>
@@ -120,15 +124,30 @@
           <ul class="poptuls-list">
             <li class="poptuls-item">
               <article class="poptuls-tool">
-                <h3 class="poptuls-name">FIGMA</h3>
-                <h4 class="poptuls-category">Free</h4>
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/img/figma.svg" alt="figma-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">FIGMA</h3>
+                    <h4 class="poptuls-category">Free</h4>
+                  </div>
+                </div>
                 <p class="poptuls-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
                 </div>
               </article>
             </li>
@@ -236,7 +255,7 @@
             <li class="brands-item">
               <a href="#" class="brands-link">
                 <img
-                  class="brands=img"
+                  class="brands-img"
                   src="./src/img/slack-2.svg"
                   alt="Slack"
                 />
@@ -389,7 +408,9 @@
                 >
               </li>
               <li class="footer-contacts-item">
-                <p class="footer-contacts-adress">M Building, No.10 A</p>
+                <p class="footer-contacts-link footer-contacts-adress">
+                  M Building, No.10 A
+                </p>
               </li>
               <li class="footer-contacts-item">
                 <a
