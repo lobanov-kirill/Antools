@@ -9,7 +9,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="./src/img/antools-logo-website.png"
+      href="./src/images/antools-logo-website.png"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Poppins:wght@400;500;600&family=Roboto&display=swap"
@@ -73,43 +73,37 @@
             Development tools
           </p>
           <form class="tools-form">
-            <input
-              class="tools-input"
-              placeholder="find more than 430+ tools..."
-              type="search"
-            />
+            <div class="tools-input-div">
+              <input
+                class="tools-input"
+                placeholder="find more than 430+ tools..."
+                type="search"
+              />
+            </div>
             <button class="tools-button" type="submit">Search</button>
           </form>
           <div class="tools-social">
-            <ul class="social-list">
-              <li class="social-item">
-                <a class="social-item-link" href="#">
-                  <img
-                    class="social-link-img"
-                    src="./src/img/facebook-icon.svg"
-                    alt="Facebook"
-                  />
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item-link" href="#">
-                  <img
-                    class="social-link-img"
-                    src="./src/img/instagram-icon.svg"
-                    alt="Instagram"
-                  />
-                </a>
-              </li>
-              <li class="social-item">
-                <a class="social-item-link" href="#">
-                  <img
-                    class="social-link-img"
-                    src="./src/img/twitter-icon.svg"
-                    alt="Twitter"
-                  />
-                </a>
-              </li>
-            </ul>
+            <a class="social-item-link" href="#">
+              <img
+                class="social-link-img"
+                src="./src/images/facebook-icon.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a class="social-item-link" href="#">
+              <img
+                class="social-link-img"
+                src="./src/images/instagram-icon.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a class="social-item-link" href="#">
+              <img
+                class="social-link-img"
+                src="./src/images/twitter-icon.svg"
+                alt="Twitter"
+              />
+            </a>
           </div>
         </div>
       </section>
@@ -126,7 +120,7 @@
               <article class="poptuls-tool">
                 <div class="card-top">
                   <div class="card-img">
-                    <img src="./src/img/figma.svg" alt="figma-icon" />
+                    <img src="./src/images/figma.svg" alt="figma-icon" />
                   </div>
                   <div class="card-name-and-category">
                     <h3 class="poptuls-name">FIGMA</h3>
@@ -153,73 +147,149 @@
             </li>
             <li class="poptuls-item">
               <article class="poptuls-tool">
-                <div class="poptuls-div">
-                  <h3 class="poptuls-name">Sketch</h3>
-                  <h4 class="poptuls-category">Trial & Paid</h4>
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/images/sketch.svg" alt="sketch-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">Sketch</h3>
+                    <h4 class="poptuls-category">Trial & Paids</h4>
+                  </div>
                 </div>
                 <p class="poptuls-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
-                </div>
-              </article>
-            </li>
-            <li class="poptuls-item">
-              <article class="poptuls-tool">
-                <h3 class="poptuls-name">Visual Studio Code</h3>
-                <h4 class="poptuls-category">Free</h4>
-                <p class="poptuls-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
-                </div>
-              </article>
-            </li>
-            <li class="poptuls-item">
-              <article class="poptuls-tool">
-                <h3 class="poptuls-name">Notion</h3>
-                <h4 class="poptuls-category">Free & Paid</h4>
-                <p class="poptuls-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
               <article class="poptuls-tool">
-                <h3 class="poptuls-name">Slack</h3>
-                <h4 class="poptuls-category">Free & Paid</h4>
+                <div class="card-top">
+                  <div class="card-img">
+                    <img
+                      src="./src/images/web-studio.svg"
+                      alt="Visual Studio Code-icon"
+                    />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">Visual Studio Code</h3>
+                    <h4 class="poptuls-category">Trial & Paids</h4>
+                  </div>
+                </div>
                 <p class="poptuls-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
                 </div>
               </article>
             </li>
             <li class="poptuls-item">
               <article class="poptuls-tool">
-                <h3 class="poptuls-name">Invision</h3>
-                <h4 class="poptuls-category">Free & Paid</h4>
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/images/notion.svg" alt="Notion-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">Notion</h3>
+                    <h4 class="poptuls-category">Free & Paid</h4>
+                  </div>
+                </div>
                 <p class="poptuls-description">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
-                <div>
-                  <input type="checkbox" class="checkbox-like" />
-                  <input type="checkbox" class="checkbox-saved" />
-                  <a href="#" class="poptuls-gallery-button">Visit</a>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="poptuls-item">
+              <article class="poptuls-tool">
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/images/slack.svg" alt="Slack-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">Slack</h3>
+                    <h4 class="poptuls-category">Trial & Paids</h4>
+                  </div>
+                </div>
+                <p class="poptuls-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="poptuls-item">
+              <article class="poptuls-tool">
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/images/invision.svg" alt="Invision-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="poptuls-name">Invision</h3>
+                    <h4 class="poptuls-category">Trial & Paids</h4>
+                  </div>
+                </div>
+                <p class="poptuls-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="poptuls-gallery-button">Visit</a>
+                  </div>
                 </div>
               </article>
             </li>
@@ -238,7 +308,7 @@
               <a href="#" class="brands-link">
                 <img
                   class="brands-img"
-                  src="./src/img/microsoft.svg"
+                  src="./src/images/microsoft.svg"
                   alt="Microsoft"
                 />
               </a>
@@ -247,7 +317,7 @@
               <a href="#" class="brands-link">
                 <img
                   class="brands-img"
-                  src="./src/img/google.svg"
+                  src="./src/images/google.svg"
                   alt="Google"
                 />
               </a>
@@ -256,7 +326,7 @@
               <a href="#" class="brands-link">
                 <img
                   class="brands-img"
-                  src="./src/img/slack-2.svg"
+                  src="./src/images/slack-2.svg"
                   alt="Slack"
                 />
               </a>
@@ -265,7 +335,7 @@
               <a href="#" class="brands-link">
                 <img
                   class="brands-img"
-                  src="./src/img/word-press.svg"
+                  src="./src/images/word-press.svg"
                   alt="WordPress"
                 />
               </a>
@@ -284,6 +354,33 @@
             </p>
             <button class="newcomer-button">Explore more</button>
           </div>
+          <!--<article class="newcomer-gallery">
+                <div class="card-top">
+                  <div class="card-img">
+                    <img src="./src/images/invision.svg" alt="Invision-icon" />
+                  </div>
+                  <div class="card-name-and-category">
+                    <h3 class="newcomer-name">Invision</h3>
+                    <h4 class="newcomer-category">Trial & Paids</h4>
+                  </div>
+                </div>
+                <p class="newcomer-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <div class="card-bottom">
+                  <ul class="checkboxes-list">
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-like" />
+                    </li>
+                    <li class="checkboxes-item">
+                      <input type="checkbox" class="checkbox-saved" />
+                    </li>
+                  </ul>
+                  <div class="card-button">
+                    <a href="#" class="newcomer-gallery-button">Visit</a>
+                  </div>
+                </div>
+              </article>-->
           <ul class="newcomer-list">
             <li class="newcomer-item">
               <article class="newcomer-gallery">
@@ -350,7 +447,7 @@
           <article class="reviews-first">
             <img
               class="reviews-first-img"
-              src="./src/img/ronald.svg"
+              src="./src/images/ronald.svg"
               alt="Ronald Richards"
             />
             <p class="reviews-text">
