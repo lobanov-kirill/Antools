@@ -415,9 +415,11 @@ body {
   background-image: url(../images/likeeeeeeeee.svg);
   background-position: center;
   align-items: center;
-  margin-left: 33px;
 }
 
+.poptuls-checkbox-like {
+  margin-left: 33px;
+}
 .checkbox-like:checked {
   background-image: url(../images/likee-reeeed.svg);
   width: 28px;
@@ -516,6 +518,55 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 288px;
+  transition: transform 0.2s ease-in;
+  padding-top: 29px;
+  padding-left: 22px;
+  padding-bottom: 28px;
+}
+
+.newcomer-gallery:hover {
+  background: radial-gradient(circle at top right, #ff6e3099 0%, #28303699 20%);
+  border-radius: 15px;
+  transform: translateY(-20px);
+}
+
+.newcomer-gallery:hover .newcomer-name {
+  color: var(--color-font-90);
+}
+
+.newcomer-gallery:hover .newcomer-category {
+  color: var(--color-tools-category-hover);
+}
+
+.newcomer-gallery:hover .newcomer-description {
+  color: var(--color-font-primary-78);
+}
+
+.newcomer-gallery:hover .newcomer-saved {
+  background-image: url(../images/sacedddd.svg);
+}
+
+.newcomer-gallery:hover .newcomer-saved:checked {
+  background-image: url(../images/free-icon-folder-17887843.png);
+}
+
+.newcomer-card-img {
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.newcomer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newcomer-checkboxes-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 19px;
 }
 
 .newcomer-list {
@@ -568,22 +619,6 @@ body {
   align-items: center;
 }
 
-.newcomer-name::before {
-  content: "";
-  background-image: url(../images/zeplin.svg);
-  width: 64px;
-  height: 64px;
-}
-
-.newcomer-item:nth-child(2) .newcomer-name::before {
-  background-image: url(../images/pgp.svg);
-}
-.newcomer-item:nth-child(3) .newcomer-name::before {
-  background-image: url(../images/toolbox.svg);
-}
-.newcomer-item:nth-child(4) .newcomer-name::before {
-  background-image: url(../images/procreate.svg);
-}
 .newcomer-category {
   font-size: 18px;
   color: var(--color-tools-category);
@@ -592,6 +627,7 @@ body {
 .newcomer-description {
   font-size: 16px;
   color: var(--color-font-primary-55);
+  margin-bottom: 30px;
 }
 
 .newcomer-gallery-button {
@@ -599,11 +635,11 @@ body {
   line-height: 1.5;
   color: var(--color-font-primary-55);
   background-color: inherit;
-  padding-left: 97px;
   padding-left: 35px;
   padding-right: 35px;
   padding-top: 9px;
   padding-bottom: 9px;
+  margin-right: 21px;
 }
 
 .newcomer-gallery-button:hover {
@@ -612,10 +648,6 @@ body {
   color: var(--color-font-primary-100);
   line-height: 1.5;
   background-color: var(--color-orange);
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-top: 9px;
-  padding-bottom: 9px;
   border-radius: 8px;
   cursor: pointer;
 }
